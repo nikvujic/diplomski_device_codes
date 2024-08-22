@@ -5,7 +5,7 @@
 const char* ssid = "***";
 const char* password = "***";
 
-// Set up with server URL
+// Set up server URL
 const char* serverName = "https://***/api/device-events/log";
 
 // Set your license key
