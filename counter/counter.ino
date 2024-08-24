@@ -38,7 +38,7 @@ void loop() {
     
     http.addHeader("Content-Type", "application/json");
     
-    String jsonData = "{\"license\": \"" + String(licenseKey) + "\", \"data\": \"{\\\"counter\\\":\\\"" + String(counter) + "\\\"}\"}";
+    String jsonData = "{\"license\": \"" + String(licenseKey) + "\", \"data\": \"{\\\"count\\\":\\\"" + String(counter) + "\\\", \\\"message\\\":\\\"Counter increased to " + String(counter) + "\\\"}\"}";
     int httpResponseCode = http.POST(jsonData);
     
     if (httpResponseCode > 0) {
